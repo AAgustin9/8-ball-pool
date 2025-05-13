@@ -1,0 +1,6 @@
+@_8_ball_pool_HostAddress = http://localhost:5265
+
+GET {{_8_ball_pool_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
