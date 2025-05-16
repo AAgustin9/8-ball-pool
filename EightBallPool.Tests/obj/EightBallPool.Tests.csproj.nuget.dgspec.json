@@ -1,0 +1,207 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/agussoul/Projects/sirius/EightBallPool/EightBallPool.Tests/EightBallPool.Tests.csproj": {}
+  },
+  "projects": {
+    "/Users/agussoul/Projects/sirius/EightBallPool/8-ball-pool/8-ball-pool.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/agussoul/Projects/sirius/EightBallPool/8-ball-pool/8-ball-pool.csproj",
+        "projectName": "8-ball-pool",
+        "projectPath": "/Users/agussoul/Projects/sirius/EightBallPool/8-ball-pool/8-ball-pool.csproj",
+        "packagesPath": "/Users/agussoul/.nuget/packages/",
+        "outputPath": "/Users/agussoul/Projects/sirius/EightBallPool/8-ball-pool/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/agussoul/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "AWSSDK.Extensions.NETCore.Setup": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "AWSSDK.S3": {
+              "target": "Package",
+              "version": "[4.0.0.3, )"
+            },
+            "AspNetCore.HealthChecks.NpgSql": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "DotNetEnv": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/agussoul/Projects/sirius/EightBallPool/EightBallPool.Tests/EightBallPool.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/agussoul/Projects/sirius/EightBallPool/EightBallPool.Tests/EightBallPool.Tests.csproj",
+        "projectName": "EightBallPool.Tests",
+        "projectPath": "/Users/agussoul/Projects/sirius/EightBallPool/EightBallPool.Tests/EightBallPool.Tests.csproj",
+        "packagesPath": "/Users/agussoul/.nuget/packages/",
+        "outputPath": "/Users/agussoul/Projects/sirius/EightBallPool/EightBallPool.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/agussoul/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/agussoul/Projects/sirius/EightBallPool/8-ball-pool/8-ball-pool.csproj": {
+                "projectPath": "/Users/agussoul/Projects/sirius/EightBallPool/8-ball-pool/8-ball-pool.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[9.0.0-preview.6.24329.3, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.12.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.72, )"
+            },
+            "Moq.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0.2, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.9.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
