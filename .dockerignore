@@ -1,0 +1,43 @@
+# Git files
+.git
+.gitignore
+.gitattributes
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Visual Studio for Mac
+.vscode/
+.idea/
+*.sln.iml
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Temporary files
+*.swp
+*.~*
+
+# Docker files (don't copy these into the image)
+Dockerfile*
+docker-compose*
+.dockerignore
+
+# Documentation
+README.md
+LICENSE
+*.md
+
+# VS Code files
+.vscode/
+*.code-workspace 
