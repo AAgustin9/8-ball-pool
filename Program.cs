@@ -39,6 +39,7 @@ builder.Services.AddHealthChecks()
 
 // App services
 builder.Services.AddScoped<IS3Service, S3Service>();
+builder.Services.AddScoped<IMatchesService, MatchesService>();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
