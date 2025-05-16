@@ -16,7 +16,24 @@ namespace _8_ball_pool.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            // Configuraciones adicionales si querés
+            
+            modelBuilder.Entity<Match>()
+                .HasOne(m => m.Player1)
+                .WithMany()
+                .HasForeignKey(m => m.Player1Id)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Match>()
+                .HasOne(m => m.Player2)
+                .WithMany()
+                .HasForeignKey(m => m.Player2Id)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Match>()
+                .HasOne(m => m.Winner)
+                .WithMany()
+                .HasForeignKey(m => m.WinnerId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }

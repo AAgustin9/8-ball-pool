@@ -5,12 +5,12 @@ using _8_ball_pool.Models;
 using _8_ball_pool.DTOs.Match;
 
 [ApiController]
-[Route("api/matches")]
-public class MatchController : ControllerBase
+[Route("api/[controller]")]
+public class MatchesController : ControllerBase
 {
     private readonly AppDbContext _context;
 
-    public MatchController(AppDbContext context)
+    public MatchesController(AppDbContext context)
     {
         _context = context;
     }
@@ -70,11 +70,11 @@ public class MatchController : ControllerBase
         }
 
         var matches = await query.ToListAsync();
-        return matches.Select(MapToDto).ToList();
+        return Ok(matches.Select(MapToDto));
         
     }
 
-    [HttpGet]
+    [HttpGet("{id}")]
     public async Task<ActionResult<MatchDto>> GetMatchById(int id)
     {
         var match = await _context.Matches

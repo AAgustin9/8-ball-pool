@@ -15,7 +15,7 @@ namespace _8_ball_pool.Models
         public string? PreferredCue { get; set; }
 
         [Required]
-        public required string ProfilePictureUrl { get; set; }
+        public string ProfilePictureUrl { get; set; }
         
         // Navigation properties for relationships
         public virtual ICollection<Match> MatchesAsPlayer1 { get; set; } = new List<Match>();
